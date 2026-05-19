@@ -23,49 +23,49 @@ bool sadeceRakamMi(const string& s) {
 bool gecerliAdSoyad(const string& ad) {
 	for (unsigned char c : ad) {
 
-		// boþluk serbest
+		// boÃ¾luk serbest
 		if (c == ' ')
 			continue;
 
-		// Ýngilizce harfler
+		// Ãngilizce harfler
 		if (c >= 'A' && c <= 'Z')
 			continue;
 
 		if (c >= 'a' && c <= 'z')
 			continue;
 
-		// ASCII dýþý karakterler (Türkçe harfler burada)
+		// ASCII dÃ½Ã¾Ã½ karakterler (TÃ¼rkÃ§e harfler burada)
 		if (c >= 128)
 			continue;
 
-		// geri kalan HER ÞEY yasak
+		// geri kalan HER ÃžEY yasak
 		return false;
 	}
 	return true;
 }
 
-//----Kitap adý kontrol----//
+//----Kitap adÃ½ kontrol----//
 bool gecerliKitapAdi(const string& ad) {
 	for (unsigned char c : ad) {
 
-		// boþluk serbest
+		// boÃ¾luk serbest
 		if (c == ' ')
 			continue;
 
-		// Ýngilizce harfler
+		// Ãngilizce harfler
 		if (c >= 'A' && c <= 'Z')
 			continue;
 
 		if (c >= 'a' && c <= 'z')
 			continue;
 
-		// ASCII dýþý karakterler (Türkçe harfler burada)
+		// ASCII dÃ½Ã¾Ã½ karakterler (TÃ¼rkÃ§e harfler burada)
 		if (c >= 128)
 			continue;
 
 		if (c >= '0' && c <= '9')
 			continue;
-		// geri kalan HER ÞEY yasak
+		// geri kalan HER ÃžEY yasak
 		return false;
 	}
 	return true;
