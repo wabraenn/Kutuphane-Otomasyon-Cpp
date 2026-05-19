@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{e97df708-7687-4654-94a6-9354bb8ea27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services">
+      <UniqueIdentifier>{e08ccdc7-7040-43c7-93e9-81dd667688ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{a6f0bf58-08da-4ad3-861b-d25dcc0a2fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menus">
+      <UniqueIdentifier>{a3427aec-2438-42d8-b491-50b1719d6947}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kutuphane_sistemi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Dosya.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="KitapService.cpp">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="KitapKontrol.cpp">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="KullaniciService.cpp">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="KullaniciKontrol.cpp">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="AnaMenu.cpp">
+      <Filter>menus</Filter>
+    </ClCompile>
+    <ClCompile Include="UyeMenu.cpp">
+      <Filter>menus</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminMenu.cpp">
+      <Filter>menus</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminInput.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kullanici.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="Kitap.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Dosya.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="KitapService.h">
+      <Filter>services</Filter>
+    </ClInclude>
+    <ClInclude Include="KitapKontrol.h">
+      <Filter>services</Filter>
+    </ClInclude>
+    <ClInclude Include="KullaniciService.h">
+      <Filter>services</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="KullaniciKontrol.h">
+      <Filter>services</Filter>
+    </ClInclude>
+    <ClInclude Include="AnaMenu.h">
+      <Filter>menus</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminMenu.h">
+      <Filter>menus</Filter>
+    </ClInclude>
+    <ClInclude Include="UyeMenu.h">
+      <Filter>menus</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminInput.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
