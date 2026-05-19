@@ -13,61 +13,61 @@ using namespace std;
 void adminMenu(vector<Kullanici>& kullanicilar, vector<Kitap>& kitaplar) {
 	int secim;
 	while (true) {
-		cout << "\n\n===Admin Menüsüne Hoþ Geldiniz===\n\n";
-		cout << "1-Kullanýcýlarý Görüntüle\n";
-		cout << "2-Kullanýcý Sil\n";
-		cout << "3-Kitaplarý Görüntüle\n";
+		cout << "\n\n===Admin MenÃ¼sÃ¼ne HoÅŸ Geldiniz===\n\n";
+		cout << "1-KullanÄ±cÄ±larÄ± GÃ¶rÃ¼ntÃ¼le\n";
+		cout << "2-KullanÄ±cÄ± Sil\n";
+		cout << "3-KitaplarÄ± GÃ¶rÃ¼ntÃ¼le\n";
 		cout << "4-Kitap Ekle\n";
 		cout << "5-Kitap Sil\n";
-		cout << "6-Kitap Stok Güncelle\n";
-		cout << "7-Çýkýþ\n";
-		cout << "Seçiminiz: ";
+		cout << "6-Kitap Stok GÃ¼ncelle\n";
+		cout << "7-Ã‡Ä±kÄ±ÅŸ\n";
+		cout << "SeÃ§iminiz: ";
 		cin >> secim;
 		cout << "\n";
 
 		if (secim < 1 || secim > 7)
 		{
-			cout << "HATALI SEÇÝM YAPTINIZ. LÜTFEN TEKRAR DENEYÝN." << endl;
-			continue; //hatalý seçim yapýldýðýnda döngünün baþýna dön
+			cout << "HATALI SEÃ‡Ä°M YAPTINIZ. LÃœTFEN TEKRAR DENEYÄ°N." << endl;
+			continue; //hatalÄ± seÃ§im yapÄ±ldÄ±ÄŸÄ±nda dÃ¶ngÃ¼nÃ¼n baÅŸÄ±na dÃ¶n
 		}
 		if (secim == 7) {
-			cout << "ÇIKIÞ YAPILIYOR...\n" << endl;
+			cout << "Ã‡IKIÅž YAPILIYOR...\n" << endl;
 			break;
 		}
 
 		switch (secim) {
 		case 1:
-			// Kullanýcýlarý görüntüleme kodu
+			// KullanÄ±cÄ±larÄ± gÃ¶rÃ¼ntÃ¼leme kodu
 			kullaniciListele(kullanicilar);
 			break;
 		case 2:
 		{
-			// Kullanýcý silme kodu
+			// KullanÄ±cÄ± silme kodu
 			kullaniciSil(kullanicilar, kitaplar);
 			break;
 		}
 		case 3:
-			// Kitaplarý görüntüleme kodu
+			// KitaplarÄ± gÃ¶rÃ¼ntÃ¼leme kodu
 			kitapListele(kitaplar);
 			break;
 		case 4:
 			// Kitap ekleme kodu
 			kitapEkle(kitaplar);
-			kitapDosyayiYenidenYaz(kitaplar); // eklenen kitabýn dosyaya kaydedilmesi
+			kitapDosyayiYenidenYaz(kitaplar); // eklenen kitabÄ±n dosyaya kaydedilmesi
 			break;
 		case 5:
 			// Kitap silme kodu
 			kitapListele(kitaplar);
 			kitapSil(kitaplar);
-			kitapDosyayiYenidenYaz(kitaplar); // silinen kitabýn dosyaya kaydedilmesi
+			kitapDosyayiYenidenYaz(kitaplar); // silinen kitabÄ±n dosyaya kaydedilmesi
 			break;
 		case 6:
-			// Kitap stok güncelleme kodu
+			// Kitap stok gÃ¼ncelleme kodu
 			kitapListele(kitaplar);
 			kitapStokGuncelle(kitaplar);
 			break;
 		default:
-			cout << "Hatalý seçim! Lütfen tekrar deneyin.\n";
+			cout << "HatalÄ± seÃ§im! LÃ¼tfen tekrar deneyin.\n";
 			break;
 		}
 
