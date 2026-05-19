@@ -17,23 +17,23 @@ void AnaMenu(vector<Kullanici>& kullanicilar, vector<Kitap>&
 	kitaplar) {
 	int secim;
 	int index;
-	cout << "Merhaba Kütüphanemize Hoþ Geldiniz\n\n";
+	cout << "Merhaba KÃ¼tÃ¼phanemize HoÃ¾ Geldiniz\n\n";
 	while (true) {
-		cout << "1-Üye Giriþi\n";
-		cout << "2-Üye Kaydý\n";
-		cout << "3-Yönetici Giriþi\n";
-		cout << "4-Çýkýþ\n";
-		cout << "Seçiminiz:";
+		cout << "1-Ãœye GiriÃ¾i\n";
+		cout << "2-Ãœye KaydÃ½\n";
+		cout << "3-YÃ¶netici GiriÃ¾i\n";
+		cout << "4-Ã‡Ã½kÃ½Ã¾\n";
+		cout << "SeÃ§iminiz:";
 		cin >> secim;
 		cout << "\n";
 
 		if (secim < 1 || secim > 4)
 		{
-			cout << "HATALI SEÇÝM YAPTINIZ. LÜTFEN TEKRAR DENEYÝN." << endl;
-			continue; //hatalý seçim yapýldýðýnda döngünün baþýna dön
+			cout << "HATALI SEÃ‡ÃM YAPTINIZ. LÃœTFEN TEKRAR DENEYÃN." << endl;
+			continue; //hatalÃ½ seÃ§im yapÃ½ldÃ½Ã°Ã½nda dÃ¶ngÃ¼nÃ¼n baÃ¾Ã½na dÃ¶n
 		}
 		if (secim == 4) {
-			cout << "ÇIKIÞ YAPILIYOR..." << endl;
+			cout << "Ã‡IKIÃž YAPILIYOR..." << endl;
 			break;
 		}
 
@@ -43,7 +43,7 @@ void AnaMenu(vector<Kullanici>& kullanicilar, vector<Kitap>&
 			char devam;
 			int index = login(kullanicilar);
 			if (index == -1) {
-				cout << "Giriþ baþarýsýz. Ana menüye dönülüyor...\n";
+				cout << "GiriÃ¾ baÃ¾arÃ½sÃ½z. Ana menÃ¼ye dÃ¶nÃ¼lÃ¼yor...\n";
 				continue;
 			}
 			else {
@@ -65,7 +65,7 @@ void AnaMenu(vector<Kullanici>& kullanicilar, vector<Kitap>&
 				adminMenu(kullanicilar, kitaplar);
 			}
 			else {
-				cout << "Admin giriþi baþarýsýz. Ana menüye dönülüyor...\n";
+				cout << "Admin giriÃ¾i baÃ¾arÃ½sÃ½z. Ana menÃ¼ye dÃ¶nÃ¼lÃ¼yor...\n";
 			}
 
 			break;
